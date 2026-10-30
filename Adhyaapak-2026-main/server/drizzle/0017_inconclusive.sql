@@ -1,0 +1,1 @@
+ALTER TYPE "public"."misconception_status" ADD VALUE 'inconclusive';

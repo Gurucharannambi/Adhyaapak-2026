@@ -1,0 +1,67 @@
+{
+  "formatVersion": 1,
+  "curriculum": {
+    "subject": "Mathematics",
+    "title": "Class 6 Mathematics — Fractions",
+    "board": "CBSE",
+    "academicYear": "2026-27",
+    "grade": 6,
+    "language": "en",
+    "version": 1,
+    "sourceReference": "Topic scope aligned to the Class 6 Mathematics fractions syllabus; all content original."
+  },
+  "chapter": { "title": "Fractions" },
+  "provenance": { "source": "ai_draft", "note": "Hindi draft prepared with AI assistance. It must be reviewed by a Hindi-medium mathematics teacher before use. Numbers and notation are unchanged from the English." },
+  "translations": [
+    {
+      "concept": "fraction-as-part",
+      "level": "foundation",
+      "language": "hi",
+      "title": "कागज़ को बराबर भागों में मोड़ना",
+      "content": {
+        "summary": "कागज़ की एक पट्टी को 4 बराबर भागों में मोड़िए और उनमें से 3 भागों में रंग भरिए। आपने 4 बराबर भागों में से 3 भागों में रंग भरा है। इसे 3/4 लिखते हैं।",
+        "steps": ["नीचे की संख्या (हर) बताती है कि कुल कितने बराबर भाग हैं: 4।", "ऊपर की संख्या (अंश) बताती है कि हम कितने भागों की बात कर रहे हैं: 3।", "अगर भाग बराबर नहीं हैं, तो हम उसे पूरे का भिन्न नहीं कह सकते।"],
+        "manipulative": { "type": "fraction-bar", "parts": 4, "shaded": 3 }
+      }
+    },
+    {
+      "concept": "fraction-as-part",
+      "level": "guided",
+      "language": "hi",
+      "title": "स्थितियों से भिन्न पढ़ना",
+      "content": {
+        "summary": "हमेशा भाग की तुलना पूरे से कीजिए, दूसरे भाग से नहीं।",
+        "workedExample": {
+          "problem": "एक पट्टी में 8 बराबर टुकड़े हैं। रवि ने उनमें से 3 खा लिए। उसने कितना भिन्न खाया?",
+          "steps": ["पूरी पट्टी में टुकड़े: 8।", "रवि ने खाए: 3 टुकड़े।", "खाया गया भिन्न = 3/8।"]
+        },
+        "commonError": "खाए गए 3 टुकड़ों की तुलना बचे हुए 5 टुकड़ों से करके 3/5 लिख देना। नीचे की संख्या पूरी पट्टी के टुकड़े, यानी 8, होनी चाहिए।"
+      }
+    },
+    {
+      "concept": "adding-fractions",
+      "level": "foundation",
+      "language": "hi",
+      "title": "बराबर आकार के टुकड़े जोड़ना",
+      "content": {
+        "summary": "टुकड़े तभी जोड़े जा सकते हैं जब वे एक ही आकार के हों। 2 सातवें और 3 सातवें मिलकर 5 सातवें बनते हैं। टुकड़े का आकार (हर) वही रहता है।",
+        "steps": ["7 बराबर भागों में से 2 भागों में रंग भरिए।", "उन्हीं 7 भागों में से 3 और भागों में रंग भरिए।", "7 में से 5 भाग रंगे हैं: 2/7 + 3/7 = 5/7।"],
+        "manipulative": { "type": "fraction-bar", "parts": 7, "shaded": 5 }
+      }
+    },
+    {
+      "concept": "adding-fractions",
+      "level": "guided",
+      "language": "hi",
+      "title": "अलग-अलग हर वाले भिन्नों को जोड़ना",
+      "content": {
+        "summary": "पहले टुकड़ों को एक ही आकार का बनाइए, फिर केवल अंशों को जोड़िए।",
+        "workedExample": {
+          "problem": "1/2 + 1/3 ज्ञात कीजिए।",
+          "steps": ["2 और 3 का उभयनिष्ठ हर: 6।", "1/2 = 3/6 और 1/3 = 2/6।", "3/6 + 2/6 = 5/6।"]
+        },
+        "commonError": "ऊपर-ऊपर और नीचे-नीचे जोड़ देना: 1/2 + 1/3 = 2/5। जाँच: 2/5, 1/2 से छोटा है, जो किसी योग के लिए सही नहीं हो सकता।"
+      }
+    }
+  ]
+}

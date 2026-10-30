@@ -1,0 +1,161 @@
+{
+  "formatVersion": 1,
+  "curriculum": {
+    "subject": "Mathematics",
+    "title": "Class 6 Mathematics — Fractions",
+    "board": "CBSE",
+    "academicYear": "2026-27",
+    "grade": 6,
+    "language": "en",
+    "version": 1,
+    "sourceReference": "Topic scope aligned to the Class 6 Mathematics fractions syllabus; all content original."
+  },
+  "chapter": { "title": "Decimals" },
+  "provenance": { "source": "original", "note": "Authored by the Adhyaapak team. Recommend review by a subject teacher before classroom use." },
+  "concepts": [
+    {
+      "key": "tenths-hundredths",
+      "title": "Tenths and hundredths as fractions",
+      "description": "A whole can be cut into 10 or 100 equal parts. One part is a tenth or a hundredth.",
+      "learningObjective": "Write tenths and hundredths as fractions and say how many parts the whole is cut into.",
+      "prerequisites": ["fraction-as-part", "equivalent-fractions"],
+      "teacherNote": "Decimals are fractions with denominator 10, 100, 1000. If students hesitate here, return to the fraction bar before introducing the decimal point.",
+      "resources": [
+        { "level": "foundation", "title": "Cutting a whole into ten", "content": { "summary": "Cut a bar into 10 equal parts. Each part is one tenth, written 1/10. Three parts are 3/10.", "steps": ["Draw a long bar.", "Cut it into 10 equal parts.", "Shade 3 parts.", "Say it: three tenths, written 3/10."], "manipulative": { "type": "fraction-bar", "parts": 10, "shaded": 3 } } },
+        { "level": "guided", "title": "Hundredths", "content": { "summary": "Cut each tenth into 10 smaller equal parts and the whole has 100 parts. One part is 1/100.", "workedExample": { "problem": "How many hundredths are in 2 tenths?", "steps": ["1 tenth = 10 hundredths.", "2 tenths = 2 × 10 = 20 hundredths.", "So 2/10 = 20/100."] }, "commonError": "Thinking 7/100 means 7 parts of 10." } },
+        { "level": "challenge", "title": "Same size, two names", "content": { "summary": "Tenths and hundredths name the same amounts in different ways.", "prompt": "Write 6/10 and 60/100 on a number line from 0 to 1. What do you notice? Find another pair like this." } }
+      ]
+    },
+    {
+      "key": "decimal-place-value",
+      "title": "Place value in decimals",
+      "description": "The digits after the decimal point are tenths, hundredths and so on. Each place is ten times smaller than the one to its left.",
+      "learningObjective": "Name the place of each digit in a decimal and give its value.",
+      "prerequisites": ["tenths-hundredths"],
+      "teacherNote": "Read decimals as place values (three point four seven), not as \"three point forty-seven\". The reading carries the meaning.",
+      "resources": [
+        { "level": "foundation", "title": "The decimal point separates wholes from parts", "content": { "summary": "In 3.47 the 3 is three wholes. After the point, the 4 is four tenths and the 7 is seven hundredths.", "steps": ["Write 3.47 in a table with columns ones, tenths, hundredths.", "Put 3 under ones, 4 under tenths, 7 under hundredths.", "Say it: three and four tenths and seven hundredths."], "manipulative": { "type": "number-line", "divisions": 10, "marks": [{ "at": 0.4, "label": "0.4" }] } } },
+        { "level": "guided", "title": "Expanded form", "content": { "summary": "Break a decimal into the value of each digit.", "workedExample": { "problem": "Write 5.08 in expanded form.", "steps": ["5 is in the ones place: 5.", "0 is in the tenths place: 0.", "8 is in the hundredths place: 0.08.", "So 5.08 = 5 + 0 + 0.08."] }, "commonError": "Treating every digit after the point as ones, so 4 in 3.47 is read as 4." } },
+        { "level": "challenge", "title": "Build the number", "content": { "summary": "Use place value to build and take apart decimals.", "prompt": "Use the digits 2, 5 and 9 once each to make the decimal closest to 5. Explain how place value helped you." } }
+      ]
+    },
+    {
+      "key": "comparing-decimals",
+      "title": "Comparing decimals",
+      "description": "To compare decimals, compare the whole parts first, then tenths, then hundredths.",
+      "learningObjective": "Compare and order decimals up to hundredths.",
+      "prerequisites": ["decimal-place-value"],
+      "teacherNote": "The trap is thinking a longer decimal is bigger (0.25 > 0.3 because 25 > 3). Write both with the same number of places: 0.25 and 0.30.",
+      "resources": [
+        { "level": "foundation", "title": "Same places, then compare", "content": { "summary": "Write both decimals with the same number of places. Then compare like whole numbers: 0.30 and 0.25.", "steps": ["Write 0.3 as 0.30.", "Compare 30 hundredths with 25 hundredths.", "30 is more than 25, so 0.3 is bigger than 0.25."], "manipulative": { "type": "number-line", "divisions": 10, "marks": [{ "at": 0.25, "label": "0.25" }, { "at": 0.3, "label": "0.3" }] } } },
+        { "level": "guided", "title": "Compare place by place", "content": { "summary": "Look at the tenths first. If they match, look at the hundredths.", "workedExample": { "problem": "Which is greater: 0.45 or 0.5?", "steps": ["Tenths: 4 and 5. 5 is more.", "So 0.5 is greater than 0.45.", "Check: 0.5 = 0.50 and 50 hundredths is more than 45 hundredths."] }, "commonError": "Choosing the decimal with more digits, such as 0.45 over 0.5." } },
+        { "level": "challenge", "title": "Order and justify", "content": { "summary": "Order several decimals and explain.", "prompt": "Order 0.6, 0.06, 0.66 and 0.606 from smallest to largest. Show the method you used and check on a number line." } }
+      ]
+    },
+    {
+      "key": "adding-decimals",
+      "title": "Adding decimals",
+      "description": "Line up the decimal points so that tenths add to tenths and hundredths to hundredths.",
+      "learningObjective": "Add decimals up to hundredths, carrying where needed.",
+      "prerequisites": ["decimal-place-value"],
+      "teacherNote": "Insist on lining up the decimal points. Adding 0.5 and 0.25 as 5 + 25 is the common slip.",
+      "resources": [
+        { "level": "foundation", "title": "Add like with like", "content": { "summary": "Tenths add to tenths, hundredths to hundredths. 0.5 + 0.25: write 0.5 as 0.50.", "steps": ["Write 0.50 and 0.25 under each other, points lined up.", "Add hundredths: 0 + 5 = 5.", "Add tenths: 5 + 2 = 7.", "The answer is 0.75."], "manipulative": { "type": "number-line", "divisions": 10, "marks": [{ "at": 0.5, "label": "0.5" }, { "at": 0.75, "label": "0.75" }] } } },
+        { "level": "guided", "title": "Carrying", "content": { "summary": "When a place adds to 10 or more, carry to the next place on the left.", "workedExample": { "problem": "Add 0.6 + 0.7", "steps": ["Tenths: 6 + 7 = 13 tenths.", "13 tenths = 1 whole and 3 tenths.", "So 0.6 + 0.7 = 1.3."] }, "commonError": "Adding the digits as whole numbers and writing 0.13." } },
+        { "level": "challenge", "title": "Missing digit", "content": { "summary": "Use adding to find what is missing.", "prompt": "Find two decimals with one decimal place each that add to exactly 2.1 and where one of them is more than 1. Explain how you know." } }
+      ]
+    },
+    {
+      "key": "decimals-fractions",
+      "title": "Decimals and fractions",
+      "description": "A decimal and a fraction can name the same amount. 0.5 is the same as 5/10 and 1/2.",
+      "learningObjective": "Convert between simple decimals and fractions.",
+      "prerequisites": ["tenths-hundredths", "equivalent-fractions"],
+      "teacherNote": "Watch for 0.5 read as 1/5: the digit after the point is the NUMERATOR over 10, not the denominator.",
+      "resources": [
+        { "level": "foundation", "title": "Tenths are decimals", "content": { "summary": "0.5 means 5 tenths, which is 5/10. Cut 5/10 into simplest form and you get 1/2.", "steps": ["0.5 = 5 tenths = 5/10.", "Divide top and bottom by 5.", "5/10 = 1/2."], "manipulative": { "type": "fraction-bar", "parts": 10, "shaded": 5 } } },
+        { "level": "guided", "title": "Hundredths and simplest form", "content": { "summary": "Write the decimal as a fraction over 10 or 100, then simplify.", "workedExample": { "problem": "Write 0.25 as a fraction.", "steps": ["0.25 = 25 hundredths = 25/100.", "Divide top and bottom by 25.", "25/100 = 1/4."] }, "commonError": "Reading 0.25 as 1/25, using the last digit as the denominator." } },
+        { "level": "challenge", "title": "Fractions to decimals", "content": { "summary": "Turn a fraction into a decimal by making the denominator 10 or 100.", "prompt": "Write 7/20 as a decimal. Then find two other fractions whose decimals are easy to find this way, and explain why." } }
+      ]
+    },
+    {
+      "key": "decimals-money",
+      "title": "Decimals in money and measures",
+      "description": "Money and lengths use decimals every day: ₹3.50 is 3 rupees and 50 paise, 2.5 m is two and a half metres.",
+      "learningObjective": "Solve one- and two-step problems with decimals in money and measures.",
+      "prerequisites": ["adding-decimals"],
+      "teacherNote": "Let students say the problem in words first. Many errors here are about what to do, not about the decimal arithmetic.",
+      "resources": [
+        { "level": "foundation", "title": "Rupees and paise", "content": { "summary": "₹3.50 is 3 rupees and 50 paise. Line up the points when you add money.", "steps": ["Write ₹3.50 and ₹2.25 under each other.", "Add paise: 50 + 25 = 75.", "Add rupees: 3 + 2 = 5.", "The total is ₹5.75."] } },
+        { "level": "guided", "title": "Taking away", "content": { "summary": "To find what is left, subtract the amount taken from the starting amount, lining up the points.", "workedExample": { "problem": "A rope is 3.5 m long. 1.25 m is cut off. How much is left?", "steps": ["Write 3.50 − 1.25.", "Hundredths: 10 − 5 = 5, borrow 1 tenth.", "Tenths: 4 − 2 = 2. Ones: 3 − 1 = 2.", "2.25 m is left."] }, "commonError": "Subtracting the smaller digit from the larger in each place, whichever is on top." } },
+        { "level": "challenge", "title": "Shopping plan", "content": { "summary": "Combine adding and subtracting.", "prompt": "You have ₹20. Choose three items from a list of prices with paise so that you spend as close to ₹20 as possible without going over. Show your adding." } }
+      ]
+    }
+  ],
+  "misconceptions": [
+    {
+      "key": "ignores-place-after-point",
+      "category": "conceptual",
+      "concept": "decimal-place-value",
+      "name": "Reads digits after the point as ones",
+      "description": "The student gives each digit after the decimal point its face value, as if it were a whole number.",
+      "exampleWrongAnswers": ["In 3.47 the 4 is worth 4", "0.5 is 5"],
+      "recommendedExplanation": "Use a place-value table with the point drawn as a bar. Each place to the right is ten times smaller. Ask: how many of these make one whole?",
+      "followUpQuestion": "qd-pv-2"
+    },
+    {
+      "key": "longer-decimal-is-bigger",
+      "category": "conceptual",
+      "concept": "comparing-decimals",
+      "name": "Thinks a longer decimal is bigger",
+      "description": "The student compares the digits after the point as whole numbers, so 0.25 looks bigger than 0.3 because 25 is more than 3.",
+      "exampleWrongAnswers": ["0.25 > 0.7", "0.45 > 0.5"],
+      "recommendedExplanation": "Write both with the same number of places (0.25 and 0.30), then compare hundredths. Show them on a number line.",
+      "followUpQuestion": "qd-cmp-2"
+    },
+    {
+      "key": "adds-decimals-as-whole-numbers",
+      "category": "conceptual",
+      "concept": "adding-decimals",
+      "name": "Adds decimal digits as whole numbers",
+      "description": "The student adds the digits after the point as if they were whole numbers and ignores place value.",
+      "exampleWrongAnswers": ["0.5 + 0.25 = 0.30", "0.6 + 0.7 = 0.13"],
+      "recommendedExplanation": "Write both numbers with the decimal points lined up and the same number of places. Add tenths to tenths and hundredths to hundredths, carrying where needed.",
+      "followUpQuestion": "qd-add-4"
+    },
+    {
+      "key": "digit-is-denominator",
+      "category": "conceptual",
+      "concept": "decimals-fractions",
+      "name": "Reads the digit as the denominator",
+      "description": "The student turns the digit after the point into the denominator, writing 0.5 as 1/5 or 0.25 as 1/25.",
+      "exampleWrongAnswers": ["0.5 = 1/5", "0.25 = 1/25"],
+      "recommendedExplanation": "Read the decimal aloud as a fraction: five tenths is 5/10. The place names the denominator; the digits are the numerator.",
+      "followUpQuestion": "qd-fr-2"
+    }
+  ],
+  "questions": [
+    { "key": "qd-th-1", "concept": "tenths-hundredths", "role": "diagnostic", "difficulty": 1, "stem": "Which fraction is the same as 3 tenths?", "options": [{ "id": "a", "text": "3/10" }, { "id": "b", "text": "1/3" }, { "id": "c", "text": "10/3" }, { "id": "d", "text": "3/100" }], "correct": "a", "explanation": "Tenths means the whole is cut into 10 equal parts, so 3 tenths is 3/10." },
+    { "key": "qd-th-2", "concept": "tenths-hundredths", "role": "guided", "difficulty": 2, "stem": "7/100 means 7 out of how many equal parts?", "options": [{ "id": "a", "text": "7" }, { "id": "b", "text": "10" }, { "id": "c", "text": "100" }, { "id": "d", "text": "107" }], "correct": "c", "explanation": "The bottom number says how many equal parts the whole is cut into: 100." },
+    { "key": "qd-th-3", "concept": "tenths-hundredths", "role": "challenge", "difficulty": 3, "stem": "Which is greater: 4/10 or 35/100?", "options": [{ "id": "a", "text": "4/10" }, { "id": "b", "text": "35/100" }], "correct": "a", "explanation": "4/10 = 40/100, and 40/100 is more than 35/100." },
+    { "key": "qd-pv-1", "concept": "decimal-place-value", "role": "diagnostic", "difficulty": 1, "stem": "In 3.47, what is the value of the digit 4?", "options": [{ "id": "a", "text": "4 ones", "misconceptionKey": "ignores-place-after-point" }, { "id": "b", "text": "4 tenths" }, { "id": "c", "text": "4 hundredths" }, { "id": "d", "text": "40" }], "correct": "b", "explanation": "The 4 is in the first place after the point, the tenths place, so it is worth 4 tenths." },
+    { "key": "qd-pv-2", "concept": "decimal-place-value", "role": "guided", "difficulty": 2, "stem": "In 5.08, which digit is in the hundredths place?", "options": [{ "id": "a", "text": "5" }, { "id": "b", "text": "0" }, { "id": "c", "text": "8" }, { "id": "d", "text": "There is no hundredths place" }], "correct": "c", "explanation": "After the point come tenths (0) and then hundredths (8)." },
+    { "key": "qd-pv-3", "concept": "decimal-place-value", "role": "guided", "difficulty": 3, "stem": "Which number is 6 + 0.3 + 0.02?", "options": [{ "id": "a", "text": "6.32" }, { "id": "b", "text": "6.05" }, { "id": "c", "text": "6.302" }, { "id": "d", "text": "63.2" }], "correct": "a", "explanation": "6 ones, 3 tenths and 2 hundredths make 6.32." },
+    { "key": "qd-cmp-1", "concept": "comparing-decimals", "role": "diagnostic", "difficulty": 2, "stem": "Which is greater: 0.7 or 0.25?", "options": [{ "id": "a", "text": "0.7" }, { "id": "b", "text": "0.25", "misconceptionKey": "longer-decimal-is-bigger" }, { "id": "c", "text": "They are equal" }, { "id": "d", "text": "Cannot tell" }], "correct": "a", "explanation": "0.7 = 0.70, which is 70 hundredths. That is more than 25 hundredths.", "alsoAssesses": ["decimal-place-value"] },
+    { "key": "qd-cmp-2", "concept": "comparing-decimals", "role": "guided", "difficulty": 2, "stem": "Which is smaller: 0.5 or 0.45?", "options": [{ "id": "a", "text": "0.5", "misconceptionKey": "longer-decimal-is-bigger" }, { "id": "b", "text": "0.45" }, { "id": "c", "text": "They are equal" }, { "id": "d", "text": "Cannot tell" }], "correct": "b", "explanation": "0.5 = 0.50 = 50 hundredths, which is more than 45 hundredths. So 0.45 is smaller." },
+    { "key": "qd-cmp-3", "concept": "comparing-decimals", "role": "challenge", "difficulty": 3, "stem": "Which list is in order from smallest to largest?", "options": [{ "id": "a", "text": "0.3, 0.4, 0.25", "misconceptionKey": "longer-decimal-is-bigger" }, { "id": "b", "text": "0.25, 0.3, 0.4" }, { "id": "c", "text": "0.4, 0.3, 0.25" }, { "id": "d", "text": "0.25, 0.4, 0.3" }], "correct": "b", "explanation": "As hundredths: 25, 30, 40. So the order is 0.25, 0.3, 0.4." },
+    { "key": "qd-cmp-4", "concept": "comparing-decimals", "role": "diagnostic", "difficulty": 1, "stem": "Which is greater: 0.7 or 0.07?", "options": [{ "id": "a", "text": "0.7" }, { "id": "b", "text": "0.07" }, { "id": "c", "text": "They are equal" }, { "id": "d", "text": "Cannot tell" }], "correct": "a", "explanation": "0.7 is 7 tenths. 0.07 is only 7 hundredths, ten times smaller." },
+    { "key": "qd-add-1", "concept": "adding-decimals", "role": "diagnostic", "difficulty": 2, "stem": "0.5 + 0.25 = ?", "options": [{ "id": "a", "text": "0.30", "misconceptionKey": "adds-decimals-as-whole-numbers" }, { "id": "b", "text": "0.75" }, { "id": "c", "text": "0.55" }, { "id": "d", "text": "0.7" }], "correct": "b", "explanation": "0.50 + 0.25: 50 hundredths and 25 hundredths make 75 hundredths, which is 0.75.", "alsoAssesses": ["decimal-place-value"] },
+    { "key": "qd-add-2", "concept": "adding-decimals", "role": "guided", "difficulty": 2, "stem": "1.2 + 0.3 = ?", "options": [{ "id": "a", "text": "1.5" }, { "id": "b", "text": "1.23" }, { "id": "c", "text": "0.15" }, { "id": "d", "text": "1.05" }], "correct": "a", "explanation": "2 tenths + 3 tenths = 5 tenths, so 1.2 + 0.3 = 1.5." },
+    { "key": "qd-add-3", "concept": "adding-decimals", "role": "challenge", "difficulty": 3, "stem": "2.75 + 1.5 = ?", "options": [{ "id": "a", "text": "3.90" }, { "id": "b", "text": "4.25" }, { "id": "c", "text": "2.90" }, { "id": "d", "text": "4.80" }], "correct": "b", "explanation": "2.75 + 1.50: 75 + 50 = 125 hundredths, which is 1 whole and 25 hundredths. Ones: 2 + 1 + 1 = 4. So 4.25." },
+    { "key": "qd-add-4", "concept": "adding-decimals", "role": "guided", "difficulty": 2, "stem": "0.6 + 0.7 = ?", "options": [{ "id": "a", "text": "1.3" }, { "id": "b", "text": "0.13", "misconceptionKey": "adds-decimals-as-whole-numbers" }, { "id": "c", "text": "1.13" }, { "id": "d", "text": "1.0" }], "correct": "a", "explanation": "6 tenths + 7 tenths = 13 tenths = 1 whole and 3 tenths = 1.3." },
+    { "key": "qd-fr-1", "concept": "decimals-fractions", "role": "diagnostic", "difficulty": 2, "stem": "Which fraction equals 0.5?", "options": [{ "id": "a", "text": "1/5", "misconceptionKey": "digit-is-denominator" }, { "id": "b", "text": "1/2" }, { "id": "c", "text": "5/100" }, { "id": "d", "text": "5/1" }], "correct": "b", "explanation": "0.5 = 5/10, and 5/10 simplifies to 1/2.", "alsoAssesses": ["tenths-hundredths"] },
+    { "key": "qd-fr-2", "concept": "decimals-fractions", "role": "guided", "difficulty": 2, "stem": "Which fraction equals 0.25?", "options": [{ "id": "a", "text": "1/25", "misconceptionKey": "digit-is-denominator" }, { "id": "b", "text": "25/10" }, { "id": "c", "text": "1/4" }, { "id": "d", "text": "2/5" }], "correct": "c", "explanation": "0.25 = 25/100, and dividing top and bottom by 25 gives 1/4." },
+    { "key": "qd-fr-3", "concept": "decimals-fractions", "role": "guided", "difficulty": 3, "stem": "Which decimal equals 3/4?", "options": [{ "id": "a", "text": "0.34" }, { "id": "b", "text": "0.75" }, { "id": "c", "text": "3.4" }, { "id": "d", "text": "0.43" }], "correct": "b", "explanation": "3/4 = 75/100 = 0.75." },
+    { "key": "qd-fr-4", "concept": "decimals-fractions", "role": "challenge", "difficulty": 3, "stem": "Which decimal equals 7/20?", "options": [{ "id": "a", "text": "0.72" }, { "id": "b", "text": "0.27" }, { "id": "c", "text": "0.35" }, { "id": "d", "text": "3.5" }], "correct": "c", "explanation": "Multiply top and bottom by 5: 7/20 = 35/100 = 0.35." },
+    { "key": "qd-mo-1", "concept": "decimals-money", "role": "diagnostic", "difficulty": 2, "stem": "A pencil costs ₹3.50 and an eraser costs ₹2.25. What is the total cost?", "options": [{ "id": "a", "text": "₹5.75" }, { "id": "b", "text": "₹5.25" }, { "id": "c", "text": "₹6.75" }, { "id": "d", "text": "₹5.80" }], "correct": "a", "explanation": "350 paise + 225 paise = 575 paise, which is ₹5.75." },
+    { "key": "qd-mo-2", "concept": "decimals-money", "role": "guided", "difficulty": 3, "stem": "A ribbon is 2.5 m long. 0.75 m is cut off. How much ribbon is left?", "options": [{ "id": "a", "text": "1.75 m" }, { "id": "b", "text": "1.25 m" }, { "id": "c", "text": "2.25 m" }, { "id": "d", "text": "1.85 m" }], "correct": "a", "explanation": "2.50 − 0.75 = 1.75." },
+    { "key": "qd-mo-3", "concept": "decimals-money", "role": "challenge", "difficulty": 4, "stem": "Meena has ₹10. She buys items costing ₹4.75 and ₹3.50. How much money is left?", "options": [{ "id": "a", "text": "₹1.75" }, { "id": "b", "text": "₹1.25" }, { "id": "c", "text": "₹2.25" }, { "id": "d", "text": "₹6.25" }], "correct": "a", "explanation": "She spends 4.75 + 3.50 = 8.25. Then 10 − 8.25 = 1.75." }
+  ],
+  "translations": []
+}

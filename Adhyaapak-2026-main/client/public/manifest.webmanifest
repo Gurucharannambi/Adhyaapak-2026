@@ -1,0 +1,11 @@
+{
+  "name": "Adhyaapak",
+  "short_name": "Adhyaapak",
+  "description": "Adaptive classroom intelligence for teachers",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#142c78",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

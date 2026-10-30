@@ -1,0 +1,51 @@
+/* The interactive fractions canvas. Colours come from the screen's palette, so it reads on light and dark screens and on the chalkboard. */
+.fc{display:grid;gap:var(--s4)}
+.fc-stage{background:var(--sf);border:1px solid var(--bd);border-radius:var(--r-l);padding:var(--s5);display:grid;gap:var(--s4)}
+.fc-row{display:grid;grid-template-columns:4.5rem 1fr;align-items:center;gap:var(--s3)}
+.fc-caption{margin:0;font:800 1.5rem/1 var(--f-head);text-align:right}
+.fc-diagram{width:100%;height:auto;max-height:90px;display:block;transition:opacity .25s var(--ease)}
+.fc-circle{max-height:180px}
+.fc-circles{display:flex;align-items:center;justify-content:center;gap:var(--s5)}
+.fc-circles .fc-diagram{width:min(40%,220px)}
+.fc-equals{font:800 2rem/1 var(--f-head)}
+.fc-cell{fill:var(--bg);stroke:var(--tx);stroke-width:1.5}
+.fc-cell.is-on{fill:var(--ac);fill-opacity:.85}
+.fc-outline{fill:none;stroke:var(--tx);stroke-width:4;stroke-dasharray:10 6}
+.fc-label{font:800 28px var(--f-head);fill:var(--ai);paint-order:stroke;stroke:var(--ac);stroke-width:5px;stroke-linejoin:round}
+.fc-label-circle{font-size:22px}
+.fc-diagram.is-dim{opacity:.25}
+.fc-equation{margin:0;text-align:center;font:800 clamp(1.75rem,3vw,2.5rem)/1.1 var(--f-head)}
+.fc-controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:var(--s4);align-items:start}
+.fc-fieldset{border:1px solid var(--bd);border-radius:var(--r);padding:var(--s3) var(--s4);margin:0;min-width:0}
+.fc-fieldset legend{font:600 11px/1.2 var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--mu);padding:0 var(--s2)}
+.fc-fraction-input{display:grid;gap:var(--s2);justify-items:center}
+.fc-stepper{display:flex;align-items:center;gap:var(--s2)}
+.fc-stepper .input{width:4.5rem;text-align:center;font:700 1.25rem var(--f-head)}
+.fc-stepper .btn{min-width:44px;padding:0}
+.fc-bar{width:7.5rem;height:3px;background:var(--tx);border-radius:2px}
+.fc-chips{display:flex;flex-wrap:wrap;gap:var(--s2)}
+.fc-chip{min-height:44px;padding:0 var(--s4);border-radius:var(--r-pill);border:1.5px solid var(--bd);background:transparent;color:var(--tx);font:600 14px var(--f-body);cursor:pointer;transition:background-color .2s var(--ease),border-color .2s var(--ease)}
+.fc-chip:hover{border-color:var(--tx)}
+.fc-chip.is-on{background:var(--ac);border-color:var(--ac);color:var(--ai)}
+.fc-actions{display:flex;gap:var(--s2);align-items:flex-start}
+.fc-panel{background:var(--sf);border:1px solid var(--bd);border-radius:var(--r-l);padding:var(--s4) var(--s5)}
+.fc-steps{margin:0 0 var(--s3);padding-left:1.4rem}
+.fc-step{margin-bottom:var(--s2);animation:fc-in .3s var(--ease) both}
+@keyframes fc-in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.fc-prompt{font-size:1.25rem;margin-bottom:var(--s3)}
+.fc-answer{display:flex;gap:var(--s2);align-items:center;margin-bottom:var(--s2)}
+.fc-answer .input{width:7rem;font:700 1.25rem var(--f-head);text-align:center}
+.fc-ok{color:var(--ok);font-weight:600;margin:0 0 var(--s3)}
+.fc-bad{color:var(--err);font-weight:600;margin:0 0 var(--s3)}
+.fc-hints{margin:0 0 var(--s3);padding-left:1.4rem}
+.fc-reveal{margin:var(--s3) 0 0;padding:var(--s2) var(--s3);border-left:3px solid var(--ac);background:var(--ac-t)}
+/* Projector: everything larger, one column. */
+.fc-large .fc-stage{padding:var(--s6)}
+.fc-large .fc-diagram{max-height:140px}
+.fc-large .fc-circle{max-height:260px}
+.fc-large .fc-equation{font-size:3.5rem}
+.fc-large .fc-caption{font-size:2.5rem}
+.fc-large .fc-row{grid-template-columns:8rem 1fr}
+.fc-large .fc-prompt,.fc-large .fc-step{font-size:1.75rem}
+@media (max-width:700px){.fc-row{grid-template-columns:3.5rem 1fr}.fc-circles{gap:var(--s3)}}
+@media (prefers-reduced-motion:reduce){.fc-step{animation:none}.fc-diagram,.fc-chip{transition:none}}

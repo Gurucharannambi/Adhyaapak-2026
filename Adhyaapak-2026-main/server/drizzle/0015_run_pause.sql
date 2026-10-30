@@ -1,0 +1,1 @@
+ALTER TABLE "lesson_runs" ADD COLUMN "paused_at" timestamp with time zone;

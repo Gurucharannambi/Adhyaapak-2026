@@ -1,0 +1,421 @@
+{
+  "formatVersion": 1,
+  "curriculum": {
+    "subject": "Mathematics",
+    "title": "Class 6 Mathematics — Fractions",
+    "board": "CBSE",
+    "academicYear": "2026-27",
+    "grade": 6,
+    "language": "en",
+    "version": 1,
+    "sourceReference": "Topic scope aligned to the Class 6 Mathematics fractions syllabus; all content original."
+  },
+  "chapter": {
+    "title": "Lines and Angles",
+    "summary": "Students move from points and lines to angles. They learn what makes a line, a ray and a line segment different, see an angle as an amount of turning, measure it in degrees, and name angles as acute, right, obtuse or straight. Doing it with hands, paper folding and clock hands comes before the protractor.",
+    "keyIdeas": [
+      "A ray starts at a point and never stops; a segment stops at both ends.",
+      "An angle measures turning, not the length of its arms.",
+      "A right angle is 90°; compare every other angle with it."
+    ]
+  },
+  "provenance": {
+    "source": "original",
+    "note": "Authored by the Adhyaapak team; topic scope follows the Class 6 Mathematics syllabus. Recommend review by a subject teacher."
+  },
+  "concepts": [
+    {
+      "key": "lines-basics",
+      "title": "Points, lines, rays and segments",
+      "description": "A point marks a position. A line segment has two ends, a ray has one end, and a line has none.",
+      "learningObjective": "Tell a point, a line segment, a ray and a line apart and name them correctly.",
+      "prerequisites": [],
+      "teacherNote": "Arrow heads matter. Students often draw every figure with no arrows because the board is finite.",
+      "resources": [
+        {
+          "level": "foundation",
+          "title": "How many ends?",
+          "content": {
+            "summary": "A point shows a position. A segment joins two points and has a fixed length. A ray starts at a point and goes on forever one way. A line goes on forever both ways.",
+            "steps": [
+              "Segment: two end points, fixed length.",
+              "Ray: one end point, arrow on the other side.",
+              "Line: arrows on both sides, no end points."
+            ]
+          }
+        },
+        {
+          "level": "guided",
+          "title": "Name the figure",
+          "content": {
+            "summary": "Count the end points and look for arrows.",
+            "workedExample": {
+              "problem": "A figure starts at point P, passes through Q and never stops. What is it?",
+              "steps": [
+                "It has one starting point, P.",
+                "It goes on forever in one direction.",
+                "It is a ray, written ray PQ."
+              ]
+            },
+            "commonError": "Calling a ray a line segment because the drawing has to stop at the edge of the page. The arrow shows it continues."
+          }
+        },
+        {
+          "level": "challenge",
+          "title": "Joining points",
+          "content": {
+            "summary": "Count segments systematically.",
+            "prompt": "Mark 4 points so that no three are in a straight line. How many different line segments can you draw by joining the points in pairs? (Hint: each point joins to 3 others, but every segment is counted twice.)"
+          }
+        }
+      ]
+    },
+    {
+      "key": "angles-intro",
+      "title": "What an angle is and how we measure it",
+      "description": "An angle is formed where two rays meet at a vertex. Its size is the amount of turning, measured in degrees.",
+      "learningObjective": "Identify the vertex and arms of an angle and read its size in degrees.",
+      "prerequisites": [
+        "lines-basics"
+      ],
+      "teacherNote": "Use a door or the hands of a clock to show an angle as turning. Longer arms do not mean a bigger angle.",
+      "resources": [
+        {
+          "level": "foundation",
+          "title": "Angle as turning",
+          "content": {
+            "summary": "An angle forms where two rays meet at a point called the vertex. The more one ray turns away from the other, the bigger the angle.",
+            "steps": [
+              "Draw two rays from one point.",
+              "The meeting point is the vertex.",
+              "Open the rays wider and the angle gets bigger.",
+              "A full turn is 360°."
+            ]
+          }
+        },
+        {
+          "level": "guided",
+          "title": "Reading a protractor",
+          "content": {
+            "summary": "Line up carefully, then read from the right scale.",
+            "workedExample": {
+              "problem": "Measure an angle with a protractor.",
+              "steps": [
+                "Put the centre of the protractor on the vertex.",
+                "Line up the zero line with one arm.",
+                "Read the number where the other arm crosses the scale that starts at 0 on your arm.",
+                "Write the size with the degree sign."
+              ]
+            },
+            "commonError": "Reading from the wrong scale. Always count from the 0 that sits on the arm you lined up."
+          }
+        },
+        {
+          "level": "challenge",
+          "title": "Clock turns",
+          "content": {
+            "summary": "Connect angles to turning.",
+            "prompt": "The minute hand moves from 12 to 4. How many degrees does it turn? How long would it take to turn 90°?"
+          }
+        }
+      ]
+    },
+    {
+      "key": "angle-types",
+      "title": "Acute, right, obtuse and straight angles",
+      "description": "Angles are named by comparing them with a right angle, which is 90°.",
+      "learningObjective": "Classify an angle as acute, right, obtuse or straight from its size.",
+      "prerequisites": [
+        "angles-intro"
+      ],
+      "teacherNote": "Give students a paper corner as a right-angle checker so they can sort angles without a protractor.",
+      "resources": [
+        {
+          "level": "foundation",
+          "title": "Compare with a square corner",
+          "content": {
+            "summary": "A right angle is 90°, like the corner of a page. Acute is smaller than that, obtuse is bigger, and a straight angle makes a straight line.",
+            "steps": [
+              "Right angle: exactly 90°.",
+              "Acute angle: less than 90°.",
+              "Obtuse angle: more than 90° but less than 180°.",
+              "Straight angle: exactly 180°."
+            ]
+          }
+        },
+        {
+          "level": "guided",
+          "title": "Sort the angles",
+          "content": {
+            "summary": "Compare each size with 90° and 180°.",
+            "workedExample": {
+              "problem": "Name the types: 135°, 90°, 40°, 180°.",
+              "steps": [
+                "135° is more than 90° and less than 180°: obtuse.",
+                "90° is a right angle.",
+                "40° is less than 90°: acute.",
+                "180° is a straight angle."
+              ]
+            },
+            "commonError": "Calling 180° obtuse. Obtuse angles are less than 180°."
+          }
+        },
+        {
+          "level": "challenge",
+          "title": "Hands of the clock",
+          "content": {
+            "summary": "Estimate angles in the real world.",
+            "prompt": "Estimate the angle between the hour hand and the minute hand at 3:00 and at 6:00. What type of angle is each?"
+          }
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q-lb-1",
+      "concept": "lines-basics",
+      "role": "diagnostic",
+      "difficulty": 1,
+      "stem": "Which figure has two end points and a fixed length?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Line segment"
+        },
+        {
+          "id": "b",
+          "text": "Ray"
+        },
+        {
+          "id": "c",
+          "text": "Line"
+        },
+        {
+          "id": "d",
+          "text": "Point"
+        }
+      ],
+      "correct": "a",
+      "explanation": "A line segment has two end points. A ray has one, and a line has none."
+    },
+    {
+      "key": "q-lb-2",
+      "concept": "lines-basics",
+      "role": "diagnostic",
+      "difficulty": 1,
+      "stem": "Which figure has exactly one end point and goes on forever in one direction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Line segment"
+        },
+        {
+          "id": "b",
+          "text": "Ray"
+        },
+        {
+          "id": "c",
+          "text": "Line"
+        },
+        {
+          "id": "d",
+          "text": "Angle"
+        }
+      ],
+      "correct": "b",
+      "explanation": "A ray starts at one point and continues forever in one direction."
+    },
+    {
+      "key": "q-lb-3",
+      "concept": "lines-basics",
+      "role": "guided",
+      "difficulty": 2,
+      "stem": "How many end points does a line have?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "It depends on the drawing"
+        }
+      ],
+      "correct": "a",
+      "explanation": "A line goes on forever in both directions, so it has no end points."
+    },
+    {
+      "key": "q-ai-1",
+      "concept": "angles-intro",
+      "role": "diagnostic",
+      "difficulty": 1,
+      "stem": "The point where the two arms of an angle meet is called the…",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vertex"
+        },
+        {
+          "id": "b",
+          "text": "Degree"
+        },
+        {
+          "id": "c",
+          "text": "Centre"
+        },
+        {
+          "id": "d",
+          "text": "Ray"
+        }
+      ],
+      "correct": "a",
+      "explanation": "The meeting point of the arms is the vertex."
+    },
+    {
+      "key": "q-ai-2",
+      "concept": "angles-intro",
+      "role": "diagnostic",
+      "difficulty": 1,
+      "stem": "A full turn is how many degrees?",
+      "options": [
+        {
+          "id": "a",
+          "text": "90°"
+        },
+        {
+          "id": "b",
+          "text": "180°"
+        },
+        {
+          "id": "c",
+          "text": "360°"
+        },
+        {
+          "id": "d",
+          "text": "100°"
+        }
+      ],
+      "correct": "c",
+      "explanation": "A full turn is 360°. A half turn is 180° and a quarter turn is 90°."
+    },
+    {
+      "key": "q-ai-3",
+      "concept": "angles-intro",
+      "role": "guided",
+      "difficulty": 3,
+      "stem": "Angle A is bigger than angle B. What must be true?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The arms of A are longer"
+        },
+        {
+          "id": "b",
+          "text": "One arm of A has turned further from the other"
+        },
+        {
+          "id": "c",
+          "text": "A is drawn higher on the page"
+        },
+        {
+          "id": "d",
+          "text": "A has more vertices"
+        }
+      ],
+      "correct": "b",
+      "explanation": "The size of an angle is how far one arm turns from the other. Arm length does not matter."
+    },
+    {
+      "key": "q-at-1",
+      "concept": "angle-types",
+      "role": "diagnostic",
+      "difficulty": 1,
+      "stem": "An angle of 65° is…",
+      "options": [
+        {
+          "id": "a",
+          "text": "Acute"
+        },
+        {
+          "id": "b",
+          "text": "Right"
+        },
+        {
+          "id": "c",
+          "text": "Obtuse"
+        },
+        {
+          "id": "d",
+          "text": "Straight"
+        }
+      ],
+      "correct": "a",
+      "explanation": "65° is less than 90°, so it is acute."
+    },
+    {
+      "key": "q-at-2",
+      "concept": "angle-types",
+      "role": "diagnostic",
+      "difficulty": 2,
+      "stem": "Which angle is obtuse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "45°"
+        },
+        {
+          "id": "b",
+          "text": "90°"
+        },
+        {
+          "id": "c",
+          "text": "120°"
+        },
+        {
+          "id": "d",
+          "text": "180°"
+        }
+      ],
+      "correct": "c",
+      "explanation": "Obtuse angles are more than 90° and less than 180°. Only 120° fits."
+    },
+    {
+      "key": "q-at-3",
+      "concept": "angle-types",
+      "role": "guided",
+      "difficulty": 1,
+      "stem": "What is the size of a straight angle?",
+      "options": [
+        {
+          "id": "a",
+          "text": "90°"
+        },
+        {
+          "id": "b",
+          "text": "180°"
+        },
+        {
+          "id": "c",
+          "text": "360°"
+        },
+        {
+          "id": "d",
+          "text": "100°"
+        }
+      ],
+      "correct": "b",
+      "explanation": "A straight angle makes a straight line: 180°."
+    }
+  ],
+  "misconceptions": [],
+  "translations": []
+}

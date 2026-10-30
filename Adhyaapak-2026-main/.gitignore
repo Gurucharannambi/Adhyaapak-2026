@@ -1,0 +1,31 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+build/
+*.tsbuildinfo
+
+# secrets and local config
+.env
+.env.*
+!.env.example
+
+# private uploads (student work must never be committed)
+uploads/
+storage/
+
+# logs and OS/editor files
+*.log
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+
+# test output
+coverage/
+playwright-report/
+test-results/
+requirements/
+ui_requirements.md
+phases.md

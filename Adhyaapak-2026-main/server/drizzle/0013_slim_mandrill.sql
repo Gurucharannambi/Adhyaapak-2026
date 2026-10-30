@@ -1,0 +1,1 @@
+ALTER TABLE "assessments" ADD COLUMN "results_released_at" timestamp with time zone;

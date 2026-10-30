@@ -1,0 +1,2 @@
+Bricolage Grotesque, IBM Plex Sans, IBM Plex Sans Devanagari, IBM Plex Mono, Caveat, Kalam: SIL Open Font License 1.1.
+Source: Fontsource packages (@fontsource/*).

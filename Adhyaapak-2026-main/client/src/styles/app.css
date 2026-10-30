@@ -1,0 +1,88 @@
+/* App-level additions to the design stylesheet (design.css is copied verbatim from requirements/adhyaapak-design). */
+label.opt-btn{cursor:pointer}
+label.opt-btn input{width:22px;height:22px;flex:none;accent-color:var(--ac)}
+label.opt-btn:has(input:checked){border-color:var(--ac);background:var(--ac);color:var(--ai)}
+label.opt-btn:has(input:checked) input{accent-color:var(--ai)}
+label.opt-btn:has(input:focus-visible){outline:3px solid var(--ac);outline-offset:2px}
+.sure label.on{border-color:var(--ac);background:var(--ac);color:var(--ai);font-weight:700}
+.student fieldset.s-q{border:1px solid var(--bd);border-radius:var(--r-l);background:var(--sf);padding:var(--s4) var(--s5);margin:0 0 var(--s4)}
+.student fieldset.s-q legend{font-weight:700;padding:0 var(--s2)}
+.field-wide{max-width:none}
+
+/* Labels that wrap their control (older markup): same look as .field. */
+label:has(> .input),label:has(> textarea),label:has(> select){display:block;font-weight:600;margin:0 0 var(--s4);max-width:34rem}
+label:has(> .input) > .input,label:has(> textarea),label:has(> select) > select{font-weight:400}
+label > .input,label > textarea,label > select{margin-top:var(--s1)}
+details{margin:var(--s3) 0}
+summary{cursor:pointer;min-height:var(--tap);display:flex;align-items:center;font-weight:600}
+blockquote{margin:0}
+fieldset{min-width:0}
+fieldset > legend{font-weight:600;padding:0}
+.q-card fieldset legend{font-weight:700}
+.hero-photo img{filter:brightness(.82) saturate(.95)}
+
+svg text{fill:var(--tx)}
+.chalk svg text{fill:var(--fg)}
+
+/* ---- Working-screen quality pass ---- */
+/* Lesson header: compact, so the teaching content starts in the first screen. */
+.lesson-head{margin:0 0 var(--s3)}
+.lesson-head-row{display:flex;align-items:baseline;gap:var(--s4);flex-wrap:wrap}
+.lesson-title{font-size:clamp(1.5rem,2.4vw,2.25rem);margin:0}
+.lesson-objective{margin:var(--s1) 0 0;color:var(--mu);max-width:none}
+/* The step bar stays under the top bar, so the teacher always knows where they are. */
+.lesson-bar{position:sticky;top:72px;z-index:30;background:var(--bg);padding:var(--s2) 0 var(--s3);margin-bottom:var(--s4);border-bottom:1px solid var(--bd)}
+.lesson-bar .life li{padding:8px 14px}
+/* The step's main action stays in reach however far the page scrolls. */
+.step-bar{position:sticky;bottom:0;z-index:30;background:var(--bg);margin:var(--s5) 0 0;padding:var(--s3) 0;border-top:1px solid var(--bd)}
+.slim-details{margin:0 0 var(--s4)}
+.slim-details>summary{min-height:36px;font-weight:500;color:var(--mu);font-size:var(--fs-s)}
+.slim-details[open]>summary{color:var(--tx)}
+.plan>li{scroll-margin-top:136px}
+/* The timeline rail */
+.timeline a{display:grid;grid-template-columns:28px 1fr auto;gap:var(--s2);align-items:center;min-height:var(--tap);padding:0 var(--s2);border-radius:var(--r);text-decoration:none;color:var(--tx)}
+.timeline a:hover{background:var(--ac-t)}
+.timeline-n{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;border:1.5px solid var(--bd);font:700 12px/1 var(--f-head);color:var(--mu)}
+.aside-private{top:140px;max-height:calc(100vh - 160px);overflow:auto}
+/* Long tables scroll inside themselves with a fixed header. */
+.scroll-y{max-height:min(360px,45vh);overflow-y:auto}
+.scroll-y thead th{position:sticky;top:0;background:var(--sf);z-index:1}
+/* Projector: controls readable from the back of the room. */
+.p-controls{font-size:1.125rem}
+.p-controls a,.p-controls button{min-height:52px;padding:0 20px;font-size:1.0625rem}
+.p-controls small{font-size:1.0625rem}
+@media (max-width:900px){.aside-private{max-height:none;top:auto}.lesson-bar{top:0}}
+@media print{.lesson-bar,.step-bar{position:static}}
+/* Answer options in the lesson plan read in two columns, so the plan is not mostly scrolling. */
+.plan .q-card ul.plain,.plan article ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 var(--s5)}
+@media (max-width:700px){.plan .q-card ul.plain,.plan article ul{grid-template-columns:1fr}}
+
+/* ---- Classroom command bar and context drawer ---- */
+.lesson-bar-row{display:flex;justify-content:space-between;align-items:center;gap:var(--s3);flex-wrap:wrap}
+.command-bar{display:flex;gap:var(--s2);align-items:center}
+.rail-drawer{position:fixed;top:72px;right:0;bottom:0;width:min(26rem,100vw);z-index:45;background:var(--bg);border-left:1px solid var(--bd);box-shadow:-18px 0 40px -28px rgba(0,0,0,.5);transform:translateX(100%);visibility:hidden;transition:transform .25s var(--ease),visibility 0s linear .25s;display:flex;flex-direction:column;outline:none}
+.rail-drawer.is-open{transform:none;visibility:visible;transition:transform .25s var(--ease),visibility 0s}
+.rail-drawer-head{display:flex;justify-content:space-between;align-items:center;padding:var(--s3) var(--s4);border-bottom:1px solid var(--bd)}
+.rail-drawer-body{padding:var(--s4);overflow:auto;flex:1}
+@media (prefers-reduced-motion:reduce){.rail-drawer,.rail-drawer.is-open{transition:none}}
+@media print{.rail-drawer,.command-bar{display:none !important}}
+/* Quick poll */
+.poll-kinds{border:0;padding:0;margin:0 0 var(--s3);display:grid;gap:var(--s2)}
+.poll-kinds label{display:flex;gap:var(--s2);align-items:flex-start;padding:var(--s2) var(--s3);border:1px solid var(--bd);border-radius:var(--r-m,10px);cursor:pointer}
+.poll-kinds label.on{border-color:var(--ac)}
+.poll-choices{border:0;padding:0;margin:0 0 var(--s3);display:grid;gap:var(--s2)}
+.poll-bars{display:grid;gap:var(--s2);margin:0 0 var(--s3)}
+.poll-bars li{display:grid;grid-template-columns:minmax(0,1fr) minmax(4rem,40%) 2.5rem;gap:var(--s2);align-items:center}
+.poll-track{height:.75rem;border-radius:999px;background:var(--bd);overflow:hidden}
+.poll-fill{display:block;height:100%;background:var(--ac);transition:width .3s var(--ease)}
+.poll-count{font-variant-numeric:tabular-nums;text-align:right;font-weight:600}
+@media (prefers-reduced-motion:reduce){.poll-fill{transition:none}}
+/* Next steps branches */
+.branches{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:var(--s3);margin-bottom:var(--s3)}
+.branch{border:1px solid var(--bd);border-radius:var(--r-m,10px);padding:var(--s3);background:var(--sf)}
+.branch.evidence{border-style:dashed}
+.branch h3{margin:0 0 var(--s2);font-size:var(--fs-m)}
+.branch-material{margin:0 0 var(--s2)}
+.branch-students{display:grid;gap:var(--s2);margin:0}
+.branch-students li{padding-top:var(--s2);border-top:1px solid var(--bd)}
+.branch-students select{min-height:2rem}

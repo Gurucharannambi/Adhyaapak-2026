@@ -1,0 +1,23 @@
+# Local development database. `npm run db:up` starts it.
+# The test database (adhyaapak_test) is created by docker/init-test-db.sql on first start.
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: adhyaapak
+      POSTGRES_PASSWORD: adhyaapak
+      POSTGRES_DB: adhyaapak
+    ports:
+      - "5433:5432"
+    volumes:
+      - adhyaapak-pgdata:/var/lib/postgresql/data
+      - ./docker/init-test-db.sql:/docker-entrypoint-initdb.d/init-test-db.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U adhyaapak -d adhyaapak"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  adhyaapak-pgdata:

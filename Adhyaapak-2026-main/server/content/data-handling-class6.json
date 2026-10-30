@@ -1,0 +1,420 @@
+{
+  "formatVersion": 1,
+  "curriculum": {
+    "subject": "Mathematics",
+    "title": "Class 6 Mathematics — Fractions",
+    "board": "CBSE",
+    "academicYear": "2026-27",
+    "grade": 6,
+    "language": "en",
+    "version": 1,
+    "sourceReference": "Topic scope aligned to the Class 6 Mathematics fractions syllabus; all content original."
+  },
+  "chapter": {
+    "title": "Data Handling and Presentation",
+    "summary": "Students collect data, record it in a tally chart, and show it in a pictograph and a bar graph. The main skills are reading the key or scale before reading the picture, and saying in a sentence what the graph tells us.",
+    "keyIdeas": [
+      "Read the key or the scale first.",
+      "Group tally marks in fives.",
+      "A graph should answer a question in one sentence."
+    ]
+  },
+  "provenance": {
+    "source": "original",
+    "note": "Authored by the Adhyaapak team; topic scope follows the Class 6 Mathematics syllabus. Recommend review by a subject teacher."
+  },
+  "concepts": [
+    {
+      "key": "data-collect",
+      "title": "Collecting and tallying data",
+      "description": "Data are facts we collect. A tally chart counts them with strokes grouped in fives.",
+      "learningObjective": "Collect simple data and record it in a tally chart.",
+      "prerequisites": [],
+      "teacherNote": "Let students collect a real class survey (favourite fruit, how they reach school) rather than use a given table.",
+      "resources": [
+        {
+          "level": "foundation",
+          "title": "Tally marks",
+          "content": {
+            "summary": "A tally chart records one stroke for each answer. Every fifth stroke crosses the four before it.",
+            "steps": [
+              "Ask each student one question.",
+              "Make one stroke for each answer.",
+              "Group strokes in fives: four strokes with a fifth across them.",
+              "Count the fives, then the leftovers."
+            ]
+          }
+        },
+        {
+          "level": "guided",
+          "title": "Fruit survey",
+          "content": {
+            "summary": "Count one item at a time and check the total.",
+            "workedExample": {
+              "problem": "Tally: Mango, Apple, Mango, Banana, Mango, Apple, Mango, Banana, Mango, Apple.",
+              "steps": [
+                "Mango appears 5 times.",
+                "Apple appears 3 times.",
+                "Banana appears 2 times.",
+                "Check: 5 + 3 + 2 = 10 answers ✓."
+              ]
+            },
+            "commonError": "Losing count because the strokes are not grouped. Cross the fourth stroke with the fifth."
+          }
+        },
+        {
+          "level": "challenge",
+          "title": "Class vote",
+          "content": {
+            "summary": "Use tallies to answer questions about the whole class.",
+            "prompt": "Votes for a trip: Museum 12, Zoo 9, Park 7, Fort 6. Which place wins, and by how many votes over the second? How many students voted?"
+          }
+        }
+      ]
+    },
+    {
+      "key": "data-pictograph",
+      "title": "Pictographs",
+      "description": "A pictograph uses a picture to stand for a number of items. The key says how many.",
+      "learningObjective": "Read and draw a pictograph using a key.",
+      "prerequisites": [
+        "data-collect"
+      ],
+      "teacherNote": "Start with a key of 1, then 2, then 5. Half a picture should always be a half of the key.",
+      "resources": [
+        {
+          "level": "foundation",
+          "title": "Read the key first",
+          "content": {
+            "summary": "In a pictograph one picture stands for a number. The key tells you which number.",
+            "steps": [
+              "Read the key: one picture = 2 students.",
+              "Count the pictures in a row.",
+              "Multiply by the value of one picture.",
+              "Half a picture is half the value."
+            ]
+          }
+        },
+        {
+          "level": "guided",
+          "title": "Books borrowed",
+          "content": {
+            "summary": "Multiply the number of pictures by the key value.",
+            "workedExample": {
+              "problem": "Key: 1 picture = 4 books. Monday has 4 pictures. Tuesday has 3 and a half pictures. How many books each day?",
+              "steps": [
+                "Monday: 4 × 4 = 16 books.",
+                "Tuesday: 3 pictures = 12 books, half a picture = 2 books.",
+                "Tuesday: 12 + 2 = 14 books."
+              ]
+            },
+            "commonError": "Counting pictures and forgetting the key. Four pictures are not four books if each picture stands for 4."
+          }
+        },
+        {
+          "level": "challenge",
+          "title": "Compare two rows",
+          "content": {
+            "summary": "Compare amounts using the key.",
+            "prompt": "In a pictograph where 1 picture = 6 items, one row has 5 and a half pictures and another has 7 pictures. How many more items does the second row show?"
+          }
+        }
+      ]
+    },
+    {
+      "key": "data-bar",
+      "title": "Bar graphs",
+      "description": "A bar graph shows amounts as bars. The scale on the side tells what each step is worth.",
+      "learningObjective": "Read a bar graph using its scale and compare the amounts it shows.",
+      "prerequisites": [
+        "data-pictograph"
+      ],
+      "teacherNote": "Ask students to choose a scale for given data. Most start at 1 for every line and run out of space.",
+      "resources": [
+        {
+          "level": "foundation",
+          "title": "Taller means more",
+          "content": {
+            "summary": "In a bar graph the taller the bar, the bigger the number. Use the scale at the side to read the value.",
+            "steps": [
+              "Read the title and the labels under the bars.",
+              "Look at the scale on the side.",
+              "Find the top of a bar and read across to the scale.",
+              "Compare the heights to compare the amounts."
+            ]
+          }
+        },
+        {
+          "level": "guided",
+          "title": "Between the lines",
+          "content": {
+            "summary": "When a bar ends between two lines, read halfway carefully.",
+            "workedExample": {
+              "problem": "The scale goes 0, 10, 20, 30. A bar ends halfway between 20 and 30. What is its value?",
+              "steps": [
+                "Halfway between 20 and 30 is 25.",
+                "The bar's value is 25."
+              ]
+            },
+            "commonError": "Reading the nearest line (20 or 30) when the bar ends between lines."
+          }
+        },
+        {
+          "level": "challenge",
+          "title": "Choose a scale",
+          "content": {
+            "summary": "Choose and use a scale yourself.",
+            "prompt": "Books read: Asha 12, Ravi 18, Meera 9, Dev 15. How many more did Ravi read than Meera? What is the total? Would a scale step of 2, 5 or 10 be best, and why?"
+          }
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q-dc-1",
+      "concept": "data-collect",
+      "role": "diagnostic",
+      "difficulty": 1,
+      "stem": "In a tally chart, how is the number 5 shown?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Four strokes with a fifth stroke across them"
+        },
+        {
+          "id": "b",
+          "text": "Five separate strokes in a column"
+        },
+        {
+          "id": "c",
+          "text": "Only the numeral 5"
+        },
+        {
+          "id": "d",
+          "text": "Four dots"
+        }
+      ],
+      "correct": "a",
+      "explanation": "Tally marks are grouped in fives: four strokes with the fifth drawn across them."
+    },
+    {
+      "key": "q-dc-2",
+      "concept": "data-collect",
+      "role": "diagnostic",
+      "difficulty": 2,
+      "stem": "A tally shows one group of five and 2 more strokes. How many is that?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        },
+        {
+          "id": "d",
+          "text": "8"
+        }
+      ],
+      "correct": "c",
+      "explanation": "5 + 2 = 7."
+    },
+    {
+      "key": "q-dc-3",
+      "concept": "data-collect",
+      "role": "guided",
+      "difficulty": 2,
+      "stem": "10 students chose: Red 4, Blue 3, Green 3. How many chose Blue or Green?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        },
+        {
+          "id": "d",
+          "text": "10"
+        }
+      ],
+      "correct": "b",
+      "explanation": "3 + 3 = 6 students chose Blue or Green."
+    },
+    {
+      "key": "q-dp-1",
+      "concept": "data-pictograph",
+      "role": "diagnostic",
+      "difficulty": 1,
+      "stem": "In a pictograph, 1 picture = 5 apples. A row has 3 pictures. How many apples?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "15"
+        },
+        {
+          "id": "d",
+          "text": "35"
+        }
+      ],
+      "correct": "c",
+      "explanation": "3 × 5 = 15 apples."
+    },
+    {
+      "key": "q-dp-2",
+      "concept": "data-pictograph",
+      "role": "diagnostic",
+      "difficulty": 2,
+      "stem": "1 picture = 10 students. A row has 2 and a half pictures. How many students?",
+      "options": [
+        {
+          "id": "a",
+          "text": "25"
+        },
+        {
+          "id": "b",
+          "text": "20"
+        },
+        {
+          "id": "c",
+          "text": "30"
+        },
+        {
+          "id": "d",
+          "text": "2.5"
+        }
+      ],
+      "correct": "a",
+      "explanation": "2 pictures = 20 and half a picture = 5, so 25."
+    },
+    {
+      "key": "q-dp-3",
+      "concept": "data-pictograph",
+      "role": "guided",
+      "difficulty": 1,
+      "stem": "Which part of a pictograph tells you what each picture stands for?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The title"
+        },
+        {
+          "id": "b",
+          "text": "The key"
+        },
+        {
+          "id": "c",
+          "text": "The last row"
+        },
+        {
+          "id": "d",
+          "text": "The total"
+        }
+      ],
+      "correct": "b",
+      "explanation": "The key says how many items one picture stands for."
+    },
+    {
+      "key": "q-db-1",
+      "concept": "data-bar",
+      "role": "diagnostic",
+      "difficulty": 1,
+      "stem": "In a bar graph, what does a taller bar mean?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A bigger number"
+        },
+        {
+          "id": "b",
+          "text": "A later date"
+        },
+        {
+          "id": "c",
+          "text": "A longer name"
+        },
+        {
+          "id": "d",
+          "text": "Nothing, it is only style"
+        }
+      ],
+      "correct": "a",
+      "explanation": "The height of a bar shows the amount, so taller means more."
+    },
+    {
+      "key": "q-db-2",
+      "concept": "data-bar",
+      "role": "diagnostic",
+      "difficulty": 2,
+      "stem": "A bar ends exactly halfway between 20 and 30. What is its value?",
+      "options": [
+        {
+          "id": "a",
+          "text": "20"
+        },
+        {
+          "id": "b",
+          "text": "25"
+        },
+        {
+          "id": "c",
+          "text": "30"
+        },
+        {
+          "id": "d",
+          "text": "23"
+        }
+      ],
+      "correct": "b",
+      "explanation": "Halfway between 20 and 30 is 25."
+    },
+    {
+      "key": "q-db-3",
+      "concept": "data-bar",
+      "role": "guided",
+      "difficulty": 2,
+      "stem": "Bar A is 40 and bar B is 25. How much taller is A?",
+      "options": [
+        {
+          "id": "a",
+          "text": "15"
+        },
+        {
+          "id": "b",
+          "text": "65"
+        },
+        {
+          "id": "c",
+          "text": "25"
+        },
+        {
+          "id": "d",
+          "text": "40"
+        }
+      ],
+      "correct": "a",
+      "explanation": "40 − 25 = 15."
+    }
+  ],
+  "misconceptions": [],
+  "translations": []
+}

@@ -1,0 +1,420 @@
+{
+  "formatVersion": 1,
+  "curriculum": {
+    "subject": "Mathematics",
+    "title": "Class 6 Mathematics — Fractions",
+    "board": "CBSE",
+    "academicYear": "2026-27",
+    "grade": 6,
+    "language": "en",
+    "version": 1,
+    "sourceReference": "Topic scope aligned to the Class 6 Mathematics fractions syllabus; all content original."
+  },
+  "chapter": {
+    "title": "Patterns in Mathematics",
+    "summary": "Mathematics is the study of patterns. Here students learn to find the repeating part of a pattern, to describe a number sequence by its rule, and to count how a shape pattern grows. The habit to build: look closely, say the rule in words, then test it on every step.",
+    "keyIdeas": [
+      "Find the repeating unit before you predict.",
+      "A rule must work for every step, not just the first two.",
+      "Say the rule in words before using numbers."
+    ]
+  },
+  "provenance": {
+    "source": "original",
+    "note": "Authored by the Adhyaapak team; topic scope follows the Class 6 Mathematics syllabus. Recommend review by a subject teacher."
+  },
+  "concepts": [
+    {
+      "key": "patterns-spot",
+      "title": "Spotting repeating patterns",
+      "description": "A pattern repeats in a predictable way. The repeating part is called the unit.",
+      "learningObjective": "Find the repeating unit of a pattern and use it to say what comes next.",
+      "prerequisites": [],
+      "teacherNote": "Use classroom objects first (claps, colours, seating). Ask 'what stays the same?' before 'what comes next?'.",
+      "resources": [
+        {
+          "level": "foundation",
+          "title": "Find the part that repeats",
+          "content": {
+            "summary": "A pattern is something that repeats in a way we can predict. The part that repeats is the unit.",
+            "steps": [
+              "Look at the pattern: A B B A B B A B B.",
+              "Find where it starts to repeat. The unit is A B B.",
+              "To continue the pattern, keep repeating A B B."
+            ]
+          }
+        },
+        {
+          "level": "guided",
+          "title": "Which item is the 10th?",
+          "content": {
+            "summary": "Use the length of the unit to jump far along a pattern without writing it all out.",
+            "workedExample": {
+              "problem": "In A B B A B B A B B …, what is the 10th item?",
+              "steps": [
+                "The unit A B B has 3 items.",
+                "10 ÷ 3 = 3 remainder 1.",
+                "A remainder of 1 means the 1st item of the unit.",
+                "So the 10th item is A."
+              ]
+            },
+            "commonError": "Looking only at the last few items instead of finding the whole repeating unit."
+          }
+        },
+        {
+          "level": "challenge",
+          "title": "Beads on a string",
+          "content": {
+            "summary": "Use the unit to answer questions about positions and counts.",
+            "prompt": "A necklace repeats red, red, blue, green. What colour is bead 25? How many blue beads are there in the first 40 beads?"
+          }
+        }
+      ]
+    },
+    {
+      "key": "patterns-rules",
+      "title": "Number sequences and their rules",
+      "description": "A number sequence follows a rule such as 'add 3' or 'double'.",
+      "learningObjective": "Find the rule of a number sequence and use it to extend the sequence.",
+      "prerequisites": [
+        "patterns-spot"
+      ],
+      "teacherNote": "Ask students to say the rule aloud in words. Many can continue a sequence but cannot describe the rule.",
+      "resources": [
+        {
+          "level": "foundation",
+          "title": "How much does it change?",
+          "content": {
+            "summary": "To find the rule, look at how each number changes to get the next one.",
+            "steps": [
+              "Write the sequence: 5, 8, 11, 14.",
+              "Subtract neighbours: 8 − 5 = 3, 11 − 8 = 3, 14 − 11 = 3.",
+              "The same change each time means the rule is 'add 3'.",
+              "The next number is 14 + 3 = 17."
+            ]
+          }
+        },
+        {
+          "level": "guided",
+          "title": "Rule, then next numbers",
+          "content": {
+            "summary": "Check the rule on every step before you trust it.",
+            "workedExample": {
+              "problem": "Find the rule and the next two numbers: 100, 90, 80, 70.",
+              "steps": [
+                "Each number is 10 less than the one before.",
+                "The rule is 'subtract 10'.",
+                "The next two numbers are 60 and 50."
+              ]
+            },
+            "commonError": "Checking only the first two numbers. Test the rule on every step."
+          }
+        },
+        {
+          "level": "challenge",
+          "title": "Doubling",
+          "content": {
+            "summary": "Some sequences grow by multiplying.",
+            "prompt": "A sequence starts at 3 and each number is double the one before: 3, 6, 12, … What is the 6th number? Is it more than 100?"
+          }
+        }
+      ]
+    },
+    {
+      "key": "patterns-shapes",
+      "title": "Growing shape patterns",
+      "description": "In a growing pattern, each figure uses more pieces than the one before.",
+      "learningObjective": "Count how a shape pattern grows and use the growth to find the number of pieces in a later figure.",
+      "prerequisites": [
+        "patterns-rules"
+      ],
+      "teacherNote": "Let students build the first three figures with sticks or counters. The 'shared stick' idea is the usual stumbling block.",
+      "resources": [
+        {
+          "level": "foundation",
+          "title": "Triangles in a row",
+          "content": {
+            "summary": "Count the sticks in each figure to see how many are added each time.",
+            "steps": [
+              "One triangle uses 3 sticks.",
+              "Two triangles side by side use 5 sticks.",
+              "Three triangles use 7 sticks.",
+              "Each new triangle adds 2 sticks."
+            ]
+          }
+        },
+        {
+          "level": "guided",
+          "title": "Sticks for 10 triangles",
+          "content": {
+            "summary": "Turn what you notice into a rule, then test it.",
+            "workedExample": {
+              "problem": "How many sticks are needed for 10 triangles in a row?",
+              "steps": [
+                "Each triangle adds 2 sticks, and there is 1 extra stick at the start.",
+                "10 × 2 + 1 = 21 sticks.",
+                "Check with 3 triangles: 3 × 2 + 1 = 7 ✓."
+              ]
+            },
+            "commonError": "Multiplying by 3 because one triangle has 3 sticks. Triangles share sticks, and a shared stick is counted once."
+          }
+        },
+        {
+          "level": "challenge",
+          "title": "Squares in a row",
+          "content": {
+            "summary": "Find the rule for a new shape on your own.",
+            "prompt": "Squares in a row use 4 sticks for the first square and 3 more for each new square. How many sticks for 12 squares? Which figure uses 40 sticks?"
+          }
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q-ps-1",
+      "concept": "patterns-spot",
+      "role": "diagnostic",
+      "difficulty": 1,
+      "stem": "What comes next? 2, 4, 6, 8, __",
+      "options": [
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        },
+        {
+          "id": "c",
+          "text": "12"
+        },
+        {
+          "id": "d",
+          "text": "16"
+        }
+      ],
+      "correct": "b",
+      "explanation": "The numbers go up by 2 each time, so the next number is 8 + 2 = 10."
+    },
+    {
+      "key": "q-ps-2",
+      "concept": "patterns-spot",
+      "role": "diagnostic",
+      "difficulty": 2,
+      "stem": "The pattern A B B A B B A B B repeats. What is the 10th letter?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "AB"
+        },
+        {
+          "id": "d",
+          "text": "BB"
+        }
+      ],
+      "correct": "a",
+      "explanation": "The unit A B B has 3 letters. 10 ÷ 3 leaves 1, so the 10th letter is the 1st letter of the unit: A."
+    },
+    {
+      "key": "q-ps-3",
+      "concept": "patterns-spot",
+      "role": "guided",
+      "difficulty": 2,
+      "stem": "In the pattern ● ▲ ■ ● ▲ ■ ● ▲ ■ …, which shape is 7th?",
+      "options": [
+        {
+          "id": "a",
+          "text": "●"
+        },
+        {
+          "id": "b",
+          "text": "▲"
+        },
+        {
+          "id": "c",
+          "text": "■"
+        },
+        {
+          "id": "d",
+          "text": "Not enough information"
+        }
+      ],
+      "correct": "a",
+      "explanation": "The unit has 3 shapes. 7 ÷ 3 leaves 1, so the 7th shape is the 1st of the unit: ●."
+    },
+    {
+      "key": "q-pr-1",
+      "concept": "patterns-rules",
+      "role": "diagnostic",
+      "difficulty": 1,
+      "stem": "Find the rule: 7, 12, 17, 22.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Add 5"
+        },
+        {
+          "id": "b",
+          "text": "Add 7"
+        },
+        {
+          "id": "c",
+          "text": "Multiply by 2"
+        },
+        {
+          "id": "d",
+          "text": "Add 4"
+        }
+      ],
+      "correct": "a",
+      "explanation": "12 − 7 = 5, 17 − 12 = 5, 22 − 17 = 5. The rule is 'add 5'."
+    },
+    {
+      "key": "q-pr-2",
+      "concept": "patterns-rules",
+      "role": "diagnostic",
+      "difficulty": 2,
+      "stem": "What is the next number? 64, 32, 16, 8, __",
+      "options": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "12"
+        }
+      ],
+      "correct": "a",
+      "explanation": "Each number is half of the one before, so the next is 8 ÷ 2 = 4."
+    },
+    {
+      "key": "q-pr-3",
+      "concept": "patterns-rules",
+      "role": "guided",
+      "difficulty": 2,
+      "stem": "Which sequence follows the rule 'start at 4, add 6'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4, 10, 16, 22"
+        },
+        {
+          "id": "b",
+          "text": "10, 16, 22, 28"
+        },
+        {
+          "id": "c",
+          "text": "4, 6, 8, 10"
+        },
+        {
+          "id": "d",
+          "text": "4, 24, 144, 864"
+        }
+      ],
+      "correct": "a",
+      "explanation": "Start at 4, then 4 + 6 = 10, 10 + 6 = 16, 16 + 6 = 22."
+    },
+    {
+      "key": "q-psh-1",
+      "concept": "patterns-shapes",
+      "role": "diagnostic",
+      "difficulty": 1,
+      "stem": "Triangles in a row use 3, 5, 7, … sticks. How many sticks for 4 triangles?",
+      "options": [
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "11"
+        },
+        {
+          "id": "c",
+          "text": "12"
+        },
+        {
+          "id": "d",
+          "text": "10"
+        }
+      ],
+      "correct": "a",
+      "explanation": "Each new triangle adds 2 sticks: 3, 5, 7, 9."
+    },
+    {
+      "key": "q-psh-2",
+      "concept": "patterns-shapes",
+      "role": "diagnostic",
+      "difficulty": 2,
+      "stem": "A row of n triangles uses 2n + 1 sticks. How many sticks for 8 triangles?",
+      "options": [
+        {
+          "id": "a",
+          "text": "17"
+        },
+        {
+          "id": "b",
+          "text": "16"
+        },
+        {
+          "id": "c",
+          "text": "24"
+        },
+        {
+          "id": "d",
+          "text": "18"
+        }
+      ],
+      "correct": "a",
+      "explanation": "2 × 8 + 1 = 17."
+    },
+    {
+      "key": "q-psh-3",
+      "concept": "patterns-shapes",
+      "role": "guided",
+      "difficulty": 2,
+      "stem": "Squares in a row use 4, 7, 10, 13 sticks. How many sticks are added with each new square?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        },
+        {
+          "id": "d",
+          "text": "1"
+        }
+      ],
+      "correct": "a",
+      "explanation": "7 − 4 = 3, 10 − 7 = 3, 13 − 10 = 3."
+    }
+  ],
+  "misconceptions": [],
+  "translations": []
+}

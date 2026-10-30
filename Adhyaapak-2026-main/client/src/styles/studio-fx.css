@@ -1,0 +1,49 @@
+/* Studio finishing touches: the reference's soft sun rays, an opaque sticky bar, and Today fixes. Loaded last. */
+
+/* Sun rays: broad, blurred, diagonal light falling from the top left. Fixed, behind everything, never interactive. */
+body.studio::before{
+  content:"";position:fixed;inset:-20vh -10vw;z-index:0;pointer-events:none;
+  background:
+    linear-gradient(118deg,transparent 0 12%,rgba(255,255,255,.85) 17%,transparent 24%,transparent 31%,rgba(255,255,255,.6) 36%,transparent 43%,transparent 52%,rgba(255,255,255,.5) 57%,transparent 65%),
+    linear-gradient(106deg,transparent 0 24%,rgba(255,255,255,.4) 29%,transparent 35%,transparent 70%,rgba(255,255,255,.3) 75%,transparent 82%);
+  filter:blur(18px);
+  -webkit-mask:linear-gradient(135deg,#000 0,rgba(0,0,0,.8) 45%,rgba(0,0,0,.25) 100%);
+  mask:linear-gradient(135deg,#000 0,rgba(0,0,0,.8) 45%,rgba(0,0,0,.25) 100%);
+}
+/* a touch more green mid-page so the light beams read against it, as in the reference */
+body.studio{background:
+    radial-gradient(60vw 50vw at 92% 100%,rgba(150,222,96,.6) 0,rgba(150,222,96,0) 70%),
+    radial-gradient(45vw 35vw at 0% 0%,rgba(250,250,246,.85) 0,rgba(250,250,246,0) 70%),
+    linear-gradient(140deg,#e9eee5 0%,#dcebd2 40%,#cbe8b3 100%);background-attachment:fixed}
+body.studio>#root,body.studio .st-top,body.studio main{position:relative;z-index:1}
+body.studio .st-top{position:sticky;z-index:50;background:rgba(238,242,235,.78);backdrop-filter:blur(16px) saturate(140%);-webkit-backdrop-filter:blur(16px) saturate(140%)}
+@media (prefers-reduced-transparency:reduce){body.studio::before{display:none}}
+@media print{body.studio::before{display:none}}
+
+/* Agent panels: a numbered trace of what the agent looked at, then the plan to approve */
+.agent{margin:20px 0}
+.agent-trace{list-style:none;margin:0 0 14px;padding:0;display:flex;flex-direction:column;gap:8px}
+.agent-trace li{display:grid;grid-template-columns:30px minmax(0,1fr);gap:10px;align-items:start;padding:10px 12px;border-radius:16px;background:rgba(255,255,255,.7);border:1px solid #fff}
+.agent-trace li.bad{background:rgba(255,246,236,.85)}
+.agent-trace .n{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--ink);color:#fff;font:500 13px/1 var(--f-body)}
+.agent-trace li.thinking .n{background:var(--sun);color:var(--ink);animation:agentpulse 1.2s ease-in-out infinite}
+.agent-trace strong{font-weight:500}
+.agent-trace details{margin-top:4px}
+.agent-trace summary{cursor:pointer;font-size:13px;color:#3b423b}
+.agent-trace .obs{display:block;margin-top:6px;padding:8px 10px;border-radius:10px;background:rgba(23,33,22,.05);font-size:12px;line-height:1.45;white-space:pre-wrap;overflow-wrap:anywhere;max-height:220px;overflow:auto}
+.agent-plan{padding:16px 18px;border-radius:20px;background:#fff;border:1px solid rgba(23,33,22,.06);margin-bottom:12px}
+.agent-plan .kv{grid-template-columns:max-content minmax(0,1fr);gap:8px 18px}
+.agent-plan .kv dt{color:var(--mu);font-size:14px}
+.agent-plan .kv dd{font-weight:400}
+@keyframes agentpulse{50%{transform:scale(.9);opacity:.7}}
+@media (prefers-reduced-motion:reduce){.agent-trace li.thinking .n{animation:none}}
+
+/* Today fixes */
+.pchart .xaxis strong{overflow-wrap:normal;hyphens:manual;font-size:clamp(12px,.95vw,15px)}
+.pchart .bar.zero{background:transparent}
+body.studio .dash .acc summary{font-weight:400}
+.today-grid>.a-periods{scrollbar-width:thin;scrollbar-color:rgba(23,33,22,.18) transparent}
+.dash .week-wrap{overflow:hidden}
+.dash .week .ev{padding:6px 9px;border-radius:14px}
+.dash .week .ev strong{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;font-size:12.5px;line-height:1.2}
+.dash .week .ev span{font-size:11px}
